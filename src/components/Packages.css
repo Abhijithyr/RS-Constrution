@@ -1,0 +1,358 @@
+/* Packages.css */
+
+/* Base Styles */
+.package-main-container {
+  font-family: "Inter", sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.packages-hero {
+  height: 60vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-family: "Inter", sans-serif;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  color: white;
+  opacity: 0.9;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 15px;
+  color: #222;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #f39c12;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  font-family: "Inter", sans-serif;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Packages Grid */
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.package-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.package-card.trending {
+  border-top: 4px solid #f39c12;
+}
+
+.trending-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #f39c12;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 2;
+}
+
+.package-image-container {
+  overflow: hidden;
+}
+
+.package-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.package-card:hover .package-image {
+  transform: scale(1.05);
+}
+
+.package-content {
+  padding: 25px;
+}
+
+.package-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(243, 156, 18, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.package-icon {
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  color: #f39c12;
+}
+
+.package-title {
+  font-size: 1.4rem;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.package-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.package-features {
+  margin-bottom: 25px;
+}
+
+.package-features li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.package-features li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  background-color: #f39c12;
+  border-radius: 50%;
+}
+
+.package-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.package-button:hover {
+  background-color: #e67e22;
+  transform: translateY(-2px);
+}
+
+.package-button .arrow-icon {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.package-button:hover .arrow-icon {
+  transform: translateX(5px);
+}
+
+/* CTA Section */
+.package-cta {
+  padding: 100px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../components/Images/Contactus.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+.cta-button .arrow-icon {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover .arrow-icon {
+  transform: translateX(5px);
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 3rem;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .packages-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .packages-hero {
+    height: 50vh;
+    min-height: 400px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .package-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .packages-hero {
+    height: 40vh;
+    min-height: 300px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-content h2 {
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+  }
+}

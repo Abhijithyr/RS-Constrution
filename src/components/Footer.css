@@ -1,0 +1,142 @@
+/* Base Footer Styles */
+.footer {
+  background-color: #e9dcd1;
+  color: #000;
+  padding: 40px 20px 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-logo-info {
+  flex: 1 1 250px;
+}
+
+.footer-logo {
+  width: 140px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.footer-description {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  color: #000;
+}
+
+/* Navigation & Contact Section */
+.footer-navigation,
+.footer-contact,
+.footer-social {
+  flex: 1 1 200px;
+}
+
+.footer-navigation h3,
+.footer-contact h3,
+.footer-social h3 {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.footer-navigation a,
+.footer-contact p,
+.footer-social a {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+  width: fit-content;
+}
+
+.footer-navigation a:hover,
+.footer-social a:hover {
+  color: #f39c12;
+}
+
+.footer_no_span {
+  color: #000;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+
+/* Social Icons */
+.footer-social a {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  color: #000;
+}
+
+/* Bottom Text */
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 40px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: #000;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-navigation,
+  .footer-contact,
+  .footer-social {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-logo {
+    width: 120px;
+  }
+
+  .footer-description {
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .footer-navigation h3,
+  .footer-contact h3,
+  .footer-social h3 {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .footer-navigation a,
+  .footer-contact p,
+  .footer-social a {
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .footer-social a {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+  }
+}
