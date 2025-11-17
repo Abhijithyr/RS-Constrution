@@ -71,6 +71,7 @@ import img59 from "../components/Images/gallery-59.jpeg";
 import img60 from "../components/Images/gallery-60.jpeg"; 
 import img61 from "../components/Images/gallery-61.jpeg"; 
 import img62 from "../components/Images/gallery-62.jpeg";
+import { Helmet } from "react-helmet-async";
 
 
 const images = [
@@ -143,12 +144,26 @@ const Gallery = () => {
   const [zoomedImage, setZoomedImage] = useState(null);
 
   return (
+
+    <>
+     <Helmet>
+        <title>Our Construction Project Gallery | RS Construction Homes</title>
+<meta name="description" content="Explore the RS Constructions project gallery featuring residential, commercial, and villa construction in Bangalore. View our completed and ongoing projects built with quality, precision, and modern architectural design."/>
+<meta name="keywords" content="RS Constructions Gallery, Construction Gallery Bangalore, Building Projects Bangalore, RS Constructions Projects, Residential Construction Bangalore, Commercial Construction Bangalore, Villa Construction Bangalore, Modern Home Design Gallery, House Construction Photos, Home Interior Gallery Bangalore, Construction Company Projects, Civil Engineering Works Bangalore, Architecture and Design Gallery, Project Showcase Bangalore, Modern Building Designs Bangalore, Construction Work Images Bangalore, Home Builders Gallery, RS Constructions Completed Projects, RS Construction Work Photos, Luxury Home Construction Bangalore"/>
+<meta name="robots" content="index, follow"/>
+<meta property="og:title" content="Project Gallery – RS Construction Homes"/>
+<meta property="og:description" content="Explore our completed construction and renovation projects across Bangalore."/>
+<meta property="og:url" content="https://rsconstruction.homes/gallery"/>
+<meta property="og:type" content="gallery"/>
+
+      </Helmet>
+
     <div className="gallery-container">
       <h2>Our Projects Gallery</h2>
       <div className="gallery">
         {images.map((image) => (
           <div key={image.id} className="gallery-item" onClick={() => setZoomedImage(image.src)}>
-            <img src={image.src} alt={image.alt} className="gallery-image" />
+            <img src={image.src} alt={image.alt} className="gallery-image" loading="lazy"/>
           </div>
         ))}
       </div>
@@ -157,12 +172,13 @@ const Gallery = () => {
       {zoomedImage && (
         <div className="zoom-overlay" onClick={() => setZoomedImage(null)}>
           <div className="zoomed-content">
-            <img src={zoomedImage} alt="Zoomed" className="zoomed-image" />
+            <img src={zoomedImage} alt="Zoomed" className="zoomed-image" loading="lazy"/>
             <button className="close-btn" onClick={() => setZoomedImage(null)}>✖</button>
           </div>
         </div>
       )}
     </div>
+    </>
   );
 };
 

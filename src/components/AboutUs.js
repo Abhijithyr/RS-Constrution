@@ -4,9 +4,23 @@ import { motion } from 'framer-motion';
 
 import aboutImg from '../components/Images/Package-1.png';
 import teamImg from '../components/Images/Package-2.png';
+import { Helmet } from "react-helmet-async";
+
 
 const AboutUs = () => {
   return (
+
+    <>
+      <Helmet>
+        <title>About Us | RS Construction Bangalore</title>
+        <meta
+          name="description"
+          content="Learn about RS Constructions, a trusted construction company in Bangalore offering high-quality residential, commercial, and civil construction services. We focus on innovation, quality, and customer satisfaction to turn your dream home into reality."
+        />
+        <meta name="keywords" content="About RS Constructions, RS Constructions Bangalore, Construction Company in Bangalore, Best Builders in Bangalore, Residential Construction Company, Commercial Construction Bangalore, Civil Contractors in Bangalore, Home Builders in Bangalore, Trusted Construction Company, Turnkey Construction Company Bangalore, Building Contractors Bangalore, Construction Experts Bangalore, Top Construction Companies Bangalore, Reliable Home Builders Bangalore, Professional Construction Services Bangalore"></meta>
+        <link rel="canonical" href="https://rsconstruction.homes/about" />
+      </Helmet>
+
     <div className="about-page">
       {/* Section 1: Who We Are */}
       <section className="about-section">
@@ -16,7 +30,7 @@ const AboutUs = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <img src={aboutImg} alt="About us" />
+          <img src={aboutImg} alt="About us" loading="lazy"/>
         </motion.div>
         <motion.div 
           className="about-text"
@@ -96,10 +110,11 @@ const AboutUs = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <img src={teamImg} alt="Our team" />
+          <img src={teamImg} alt="Our team" loading="lazy"/>
         </motion.div>
       </section>
     </div>
+    </>
   );
 };
 

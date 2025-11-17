@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Header.css';
-import { FaPhone, FaMapMarkerAlt, FaBars, FaTimes, FaArrowRight } from 'react-icons/fa';
+import { FaPhone, FaMapMarkerAlt, FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../components/Images/newlogo.png';
 
 const Header = () => {
@@ -98,7 +98,7 @@ const Header = () => {
       >
         <div className="mobile-menu-container">
           <div className="mobile-menu-header">
-            <img src={logo} alt="Company Logo" className="mobile-logo" />
+            <img src={logo} alt="Company Logo" className="mobile-logo" loading="lazy"/>
             <button
               className="mobile-menu-close"
               onClick={toggleMenu}

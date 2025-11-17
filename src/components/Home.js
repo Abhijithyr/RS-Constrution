@@ -23,80 +23,7 @@ import HeroImage2 from "../components/Images/Home-Image3.png";
 import ResidentialImg from "../components/Images/Package-1.png";
 import CommercialImg from "../components/Images/commercial-package.png";
 import VillaImg from "../components/Images/Package-4.png";
-
-// const stepIcons = [
-//   <FaPlay />, <FaDraftingCompass />, <FaFileSignature />,
-//   <FaHardHat />, <FaMapMarkerAlt />, <FaCheckCircle />
-// ];
-
-// const steps = [
-//   {
-//     id: 1,
-//     title: 'Lets Get Started',
-//     image: HeroImage1,
-//     description:
-//       'Enquire and schedule an appointment with our experts to discuss your requirements...',
-//     points: [
-//       'Understanding the construction requirements of the client.',
-//       'Defining Client Construction Criteria.',
-//     ],
-//   },
-//   {
-//     id: 2,
-//     title: 'Design Specifications',
-//     image: HeroImage2,
-//     description:
-//       'Our excellent in-house team of architects initiate the design process...',
-//     points: [
-//       'Provide 3D architectural floor plan and elevation designs.',
-//       'Ensure the design is Vaastu compliant.',
-//     ],
-//   },
-//   {
-//     id: 3,
-//     title: 'Client Agreement',
-//     image: HeroImage3,
-//     description:
-//       'Once the design is approved, the costing is finalized...',
-//     points: [
-//       'No subcontracting of any kind.',
-//       'Commitment to transparency from the start of the contract.',
-//     ],
-//   },
-//   {
-//     id: 4,
-//     title: 'Construction & Updates',
-//     image: HeroImage4,
-//     description:
-//       'Construction begins within 30-45 days following the signing...',
-//     points: [
-//       'Monitor and track progress through buildAhome App.',
-//       'Distinct Communication at Every Step.',
-//     ],
-//   },
-//   {
-//     id: 5,
-//     title: 'Site Visits',
-//     image: HeroImage1,
-//     description:
-//       'Regular site visits by architects, structural & MEP designers...',
-//     points: [
-//       'Comprehensive Site and Material Management.',
-//       'Periodic visits by Quality & Safety teams.',
-//     ],
-//   },
-//   {
-//     id: 6,
-//     title: 'Completion & Handover',
-//     image: HeroImage1,
-//     description:
-//       'The ultimate project handover marks the successful completion...',
-//     points: [
-//       'Complete Final Inspection and handover kit is given.',
-//       'Ongoing Support and Satisfaction Assurance.',
-//     ],
-//   },
-// ];
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const heroImages = [HeroImage1, HeroImage2];
@@ -179,6 +106,21 @@ const Home = () => {
   ];
 
   return (
+    <>
+
+    <Helmet>
+
+      <title>Residential & Commercial Construction in Bangalore | RS Construction Homes</title>
+<meta name="description" content="RS Construction Homes provides top-quality residential and commercial construction, renovation, and interior design services in Bangalore. Get your free consultation today!"/>
+<meta name="keywords" content="Construction company in Bangalore, home construction, renovation, builders, residential contractors, RS Construction Homes,RS Constructions, RS Construction Bangalore, Construction Company in Bangalore, Building Contractors in Bangalore, Best Construction Company in Bangalore, Civil Engineering Contractors Bangalore, Residential Builders in Bangalore, Home Construction in Bangalore, House Construction in Bangalore, Commercial Builders Bangalore, Turnkey Construction Services Bangalore, Modern Home Builders Bangalore, Affordable Construction Packages Bangalore, Construction Cost Estimator Bangalore, Civil Work Contractors Bangalore, Trusted Construction Company in Bangalore, Top Builders in Bangalore, Best Construction Services Bangalore, Residential Construction Company, Construction Near Me Bangalore"/>
+<meta name="robots" content="index, follow"/>
+<meta property="og:title" content="Residential & Commercial Construction in Bangalore | RS Construction Homes"/>
+<meta property="og:description" content="Trusted construction company offering residential and commercial projects in Bangalore. Quality workmanship and timely delivery."/>
+<meta property="og:url" content="https://rsconstruction.homes/"/>
+<meta property="og:type" content="website"/>
+        
+      </Helmet>
+
     <div className="home-page">
       {/* Hero Section */}
       <section className="hero-section-home">
@@ -187,6 +129,7 @@ const Home = () => {
             src={heroImages[currentImageIndex]} 
             alt="Construction showcase" 
             className="hero-image" 
+            loading="lazy"
           />
           <div className="hero-overlay">
             <h1 className={`hero-title-home ${isVisible ? 'animate' : ''}`}>
@@ -214,7 +157,7 @@ const Home = () => {
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
                 <div className="card-image-container">
-                  <img src={service.image} alt={service.title} />
+                  <img src={service.image} alt={service.title} loading="lazy"/>
                 </div>
                 <div className="card-content">
                   <h3>{service.title}</h3>
@@ -310,6 +253,7 @@ const Home = () => {
         </div>
       </section>
     </div>
+  </>
   );
 };
 

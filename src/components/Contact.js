@@ -3,6 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Contact.css';
 import { MailOutlined, MobileOutlined, EnvironmentOutlined } from '@ant-design/icons';
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   const [formData, setFormData] = React.useState({
@@ -42,6 +43,21 @@ const Contact = () => {
   };
 
   return (
+
+    <>
+      <Helmet>
+        <title>Contact RS Construction Homes | Get a Free Quote</title>
+<meta name="description" content="Contact RS Construction Homes for residential or commercial construction in Bangalore. Get expert consultation and a free project quote today."/>
+<meta name="keywords" content="Contact RS Constructions, RS Construction Contact, Construction Company in Bangalore, RS Constructions Bangalore, Building Contractors in Bangalore, Home Builders Bangalore, Residential Construction Bangalore, Commercial Construction Bangalore, Turnkey Construction Bangalore, Construction Services Near Me, Construction Estimate Bangalore, Civil Contractors Bangalore, Call RS Constructions, RS Constructions Office Bangalore, Contact Building Contractors Bangalore"/>
+<meta name="robots" content="index, follow"/>
+<meta property="og:title" content="Contact RS Construction Homes"/>
+<meta property="og:description" content="Let’s build your dream home! Contact RS Construction Homes today for a free consultation and project estimate."/>
+<meta property="og:url" content="https://rsconstruction.homes/contact"/>
+<meta property="og:type" content="contact"/>
+
+      </Helmet>
+
+
     <div className="contact-container">
       <ToastContainer />
       <div className="contact-form">
@@ -98,6 +114,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

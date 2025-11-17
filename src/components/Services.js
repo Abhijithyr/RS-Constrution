@@ -9,6 +9,7 @@ import ResidentialImg from '../components/Images/Package-1.png';
 import CommercialImg from '../components/Images/commercial-package.png';
 import RenovationImg from '../components/Images/Renovation-services.png';
 import InteriorImg from '../components/Images/Interior-services.png';
+import { Helmet } from "react-helmet-async";
 
 const Services = () => {
   const [activeTab, setActiveTab] = useState('residential');
@@ -116,10 +117,24 @@ const Services = () => {
   ];
 
   return (
+
+    <>
+      <Helmet>
+        <title>Construction & Renovation Services in Bangalore | RS Construction Homes</title>
+<meta name="description" content="RS Constructions provides professional construction services in Bangalore, including residential, commercial, interior design, and turnkey projects. Quality-driven, affordable, and on-time delivery for every project."/>
+<meta name="keywords" content="Construction Services Bangalore, Residential Construction Bangalore, Commercial Construction Bangalore, Turnkey Projects Bangalore, Interior Design Bangalore, Building Contractors Bangalore, RS Constructions, Home Construction Services Bangalore, House Building Services, Apartment Construction, Villa Construction, Civil Engineering Services Bangalore, Best Construction Company Bangalore, Structural Design Bangalore, End-to-End Construction Bangalore, Renovation Services Bangalore, Civil Contractors Bangalore, Home Builders Bangalore, Turnkey Construction Solutions, Construction Management Bangalore"/>
+<meta name="robots" content="index, follow"/>
+<meta property="og:title" content="Construction & Renovation Services in Bangalore"/>
+<meta property="og:description" content="From design to delivery — full-service construction and renovation in Bangalore by RS Construction Homes."/>
+<meta property="og:url" content="https://rsconstruction.homes/services"/>
+<meta property="og:type" content="article"/>
+
+      </Helmet>
+
     <div className="services-page">
       {/* Hero Section */}
       <section className="services-hero">
-        <img src={ServiceHero} alt="Construction services" className="hero-image" />
+        <img src={ServiceHero} alt="Construction services" className="hero-image" loading="lazy"/>
         <div className="hero-content">
           <h1 className={`hero-title ${isVisible ? 'animate' : ''}`}>Our Construction Services</h1>
         </div>
@@ -159,7 +174,7 @@ const Services = () => {
               </ul>
             </div>
             <div className="service-image">
-              <img src={services[activeTab].image} alt={services[activeTab].title} />
+              <img src={services[activeTab].image} alt={services[activeTab].title} loading="lazy"/>
             </div>
           </div>
         </div>
@@ -194,6 +209,7 @@ const Services = () => {
       </section>
 
     </div>
+    </>
   );
 };
 
