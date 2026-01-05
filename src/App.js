@@ -12,6 +12,7 @@ import VillaPackage from './components/VillaPackage';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import WhatsappButton from './components/WhatsappButton';
+import Packages123 from './components/Packages123';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
         <Route path='/package/concrete-blocks' element={<ConcreteBlocks />} />
         <Route path='/package/redclay-bricks' element={<RedClayBricks />} />
         <Route path='/package/villa-package' element={<VillaPackage />} />
+        <Route path='/packages123' element={<Packages123 />} /> 
       
       </Routes>
       <WhatsappButton />

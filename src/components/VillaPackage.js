@@ -194,7 +194,7 @@ const VillaPackage = () => {
 
   return (
     <div className="redclaybricks-packages">
-      <h1>Residential Building Package (Red Clay Bricks)</h1>
+      <h1>Villa Package</h1>
       <div className="redclaybricks-packages-container">
         {concretePackagesData.map((packageItem, packageIndex) => (
           <div key={packageIndex} className="redclaybricks-package">
