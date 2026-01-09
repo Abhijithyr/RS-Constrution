@@ -1,9 +1,11 @@
 /* Base Footer Styles */
 .footer {
-  background-color: #e9dcd1;
+  /* background-color: #e9dcd1; */
+  background-color: #ffe8c4;
   color: #000;
-  padding: 40px 20px 20px;
-  font-family: "Inter", sans-serif;
+  padding: 20px 20px 10px;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "SF Pro Display";
 }
 
 .footer-container {
@@ -27,7 +29,7 @@
 
 .footer-description {
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
   line-height: 1.6;
   color: #000;
 }
@@ -43,7 +45,7 @@
 .footer-contact h3,
 .footer-social h3 {
   font-size: 18px;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
   margin-bottom: 15px;
   color: #000;
 }
@@ -53,7 +55,7 @@
 .footer-social a {
   display: block;
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
   color: #000;
   text-decoration: none;
   margin-bottom: 10px;
@@ -69,7 +71,7 @@
 .footer_no_span {
   color: #000;
   font-weight: bold;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
 }
 
 /* Social Icons */
@@ -77,7 +79,7 @@
   display: inline-block;
   margin-right: 15px;
   font-size: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
   color: #000;
 }
 
@@ -88,7 +90,7 @@
   padding-top: 15px;
   text-align: center;
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
   color: #000;
 }
 
@@ -113,30 +115,41 @@
 
   .footer-description {
     font-size: 13px;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
   }
 
   .footer-navigation h3,
   .footer-contact h3,
   .footer-social h3 {
     font-size: 16px;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
   }
 
   .footer-navigation a,
   .footer-contact p,
   .footer-social a {
     font-size: 13px;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
   }
 
   .footer-social a {
     font-size: 18px;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
   }
 
   .footer-bottom {
     font-size: 12px;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
   }
+  .footer-logo-info {
+    flex: 1 1 100px;
+}
+    .footer-navigation, .footer-contact {
+        margin-top: 0px;
+        flex: 1 1 150px;
+    }
+    .footer-social {
+        margin-top: 0px;
+        flex: 1 1 60px;
+    }
 }

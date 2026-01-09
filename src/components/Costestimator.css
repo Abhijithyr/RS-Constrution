@@ -1,6 +1,7 @@
 /* Container & Hero Section */
 .cost-estimator-container {
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "SF Pro Display";
   background-color: #f9f9f9;
   padding-bottom: 60px;
 }
@@ -28,7 +29,7 @@
   color: #fff;
   font-size: 3rem;
   font-weight: 700;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
   z-index: 1;
 }
 
@@ -47,7 +48,7 @@
   display: flex;
   align-items: center;
   font-size: 1.8rem;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
   gap: 10px;
   margin-bottom: 30px;
   color: #333;
@@ -61,7 +62,7 @@
 
 .form-group label {
   font-weight: 600;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
   margin-bottom: 8px;
   color: #444;
 }
@@ -88,7 +89,7 @@
   color: white;
   padding: 14px 24px;
   font-size: 1rem;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -115,7 +116,7 @@
 
 .cost-results h3 {
   font-size: 1.6rem;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
   margin-bottom: 20px;
   color: #222;
 }
@@ -126,7 +127,7 @@
 
 .cost-result h4 {
   font-size: 1.3rem;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
   color: #444;
 }
 
@@ -157,7 +158,7 @@
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.2rem;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
   }
 
   .cost-estimator-form {
@@ -166,12 +167,12 @@
 
   .cost-estimator-form h2 {
     font-size: 1.5rem;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
   }
 
   .submit-btn {
     font-size: 1rem;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
     padding: 12px;
   }
 
@@ -181,6 +182,6 @@
 
   .cost-results h3 {
     font-size: 1.4rem;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
   }
 }

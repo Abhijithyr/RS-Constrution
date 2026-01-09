@@ -5,14 +5,14 @@ import Header from './components/Header';
 import AboutUs from './components/AboutUs';
 import Services from './components/Services';
 import Costestimator from './components/Costestimator';
-import Packages from './components/Packages';
-import ConcreteBlocks from './components/ConcreteBlocks';
-import RedClayBricks from './components/RedClayBricks';
-import VillaPackage from './components/VillaPackage';
+// import Packages from './components/Packages';
+// import ConcreteBlocks from './components/ConcreteBlocks';
+// import RedClayBricks from './components/RedClayBricks';
+// import VillaPackage from './components/VillaPackage';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import WhatsappButton from './components/WhatsappButton';
-import Packages123 from './components/Packages123';
+import Package from './components/Package';
 
 function App() {
 
@@ -27,11 +27,11 @@ function App() {
         <Route path="/cost-estimator" element={<Costestimator />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/packages" element={<Packages />} />
+        {/* <Route path="/packages" element={<Packages />} />
         <Route path='/package/concrete-blocks' element={<ConcreteBlocks />} />
         <Route path='/package/redclay-bricks' element={<RedClayBricks />} />
-        <Route path='/package/villa-package' element={<VillaPackage />} />
-        <Route path='/packages123' element={<Packages123 />} /> 
+        <Route path='/package/villa-package' element={<VillaPackage />} /> */}
+        <Route path='/package' element={<Package />} /> 
       
       </Routes>
       <WhatsappButton />

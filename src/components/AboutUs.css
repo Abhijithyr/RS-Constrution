@@ -1,7 +1,7 @@
 .about-page {
   width: 100%;
   background-color: #f9f9f9;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
 }
 
 /* Section Styling */
@@ -35,7 +35,7 @@
 .choose-section h2,
 .mission-text h2 {
   font-size: 2.4rem;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
   margin-bottom: 20px;
   color: #222;
 }
@@ -43,7 +43,7 @@
 .about-text p,
 .mission-text p {
   font-size: 1.1rem;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
   color: #444;
   line-height: 1.7;
 }
@@ -65,7 +65,7 @@
   align-items: center;
   gap: 10px;
   font-weight: 500;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
   color: #333;
 }
 
@@ -100,20 +100,21 @@
 
 .choose-icon {
   font-size: 2.5rem;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
   color: #ff6f00;
   margin-bottom: 15px;
 }
 
 .choose-card h4 {
   font-size: 1.3rem;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
   margin-bottom: 10px;
 }
 
 .choose-card p {
   font-size: 1rem;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "SF Pro Display";
   color: #555;
 }
 
@@ -127,7 +128,7 @@
   margin-bottom: 10px;
   color: #333;
   font-weight: 500;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
 }
 
 /* Responsive */

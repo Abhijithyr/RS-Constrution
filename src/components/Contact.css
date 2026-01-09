@@ -26,14 +26,15 @@
   color: #ab0808; 
   text-align: center;
   font-size: 2.5em;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "SF Pro Display";
 }
 
 .contact-form label {
   display: block;
   margin: 10px 0 5px;
   font-size: 1.4em;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
 }
 
 .contact-form input,
@@ -62,7 +63,7 @@
   transition: background-color 0.3s, transform 0.3s;
   font-size: 20px;
   font-weight: 600;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
 }
 
 .contact-form button:hover {
@@ -94,7 +95,7 @@
 
 .contact-details svg {
   font-size: 24px;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
   margin-right: 10px;
   color: #000;
 }
@@ -102,13 +103,13 @@
 .contact-topic {
   font-weight: bold;
   color: #333;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
   font-size: 20px;
 }
 
 .contact-text, .contact-text-number {
   font-size: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
 }
 
 
@@ -123,7 +124,7 @@
   color: #fff;
   text-align: center;
   font-size: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: "SF Pro Display";
 }
 
 @media (max-width: 768px) {
@@ -138,7 +139,7 @@
   }
   .contact-text {
     font-size: 16px;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
 }
 
   .contact-map-container iframe {
@@ -149,7 +150,7 @@
 @media (max-width: 480px) {
   .contact-form h2, .contact-info h3 {
     font-size: 1.5em;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
   }
   .contact-container {
     width: 85%;
@@ -158,12 +159,12 @@
   }
   .contact-text {
     font-size: 16px;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
 }
 
   .contact-form button {
     padding: 10px;
     font-size: 16px;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
   }
 }

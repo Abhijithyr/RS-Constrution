@@ -67,7 +67,7 @@ const Header = () => {
                 <li><a href="/" className="nav-link">Our Homes</a></li>
                 <li><a href="/services" className="nav-link">Services</a></li>
                 <li><a href="/cost-estimator" className="nav-link">Cost Estimator</a></li>
-                <li><a href="/packages" className="nav-link">Packages</a></li>
+                <li><a href="/package" className="nav-link">Packages</a></li>
               </ul>
               {/* <button className="consultation-btn" onClick={toggleModal}>
                 Get free consultation <FaArrowRight className="btn-arrow" />
@@ -112,7 +112,7 @@ const Header = () => {
               <li><a href="/about" onClick={toggleMenu}>About Us</a></li>
               <li><a href="/services" onClick={toggleMenu}>Services</a></li>
               <li><a href="/cost-estimator" onClick={toggleMenu}>Cost Estimator</a></li>
-              <li><a href="/packages" onClick={toggleMenu}>Packages</a></li>
+              <li><a href="/package" onClick={toggleMenu}>Packages</a></li>
               <li><a href="/gallery" onClick={toggleMenu}>Gallery</a></li>
               <li><a href="/contact" onClick={toggleMenu}>Contact Us</a></li>
               {/* <li>

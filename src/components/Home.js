@@ -64,21 +64,21 @@ const Home = () => {
       title: "RESIDENTIAL CONSTRUCTION",
       subtitle: "Dream homes tailored to you",
       description: "We build premium furnished and semi-furnished homes...",
-      link: "/packages"
+      link: "/package"
     },
     {
       image: CommercialImg,
       title: "COMMERCIAL CONSTRUCTION",
       subtitle: "Spaces that inspire business",
       description: "Creating innovative commercial spaces...",
-      link: "/packages"
+      link: "/package"
     },
     {
       image: VillaImg,
       title: "VILLA CONSTRUCTION",
       subtitle: "Luxury living redefined",
       description: "Custom villas blending modern design...",
-      link: "/packages"
+      link: "/package"
     }
   ];
 

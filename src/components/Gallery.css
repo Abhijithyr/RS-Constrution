@@ -7,7 +7,8 @@
   /* Gallery Title */
   .gallery-container h2 {
     font-size: 3rem;
-    font-family: "Inter", sans-serif;
+    /* font-family: "Inter", sans-serif; */
+    font-family: "SF Pro Display";
     color: #000;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -73,7 +74,7 @@
     width: 35px;
     height: 35px;
     font-size: 18px;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,7 +138,7 @@
     }
     .gallery-container h2 {
     font-size: 1.5rem;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
     }
   }
   

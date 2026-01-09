@@ -8,10 +8,11 @@
     color: #333;
     margin-bottom: 10px;
     font-size: 2.3rem;
-    font-family: "Inter", sans-serif;
+    /* font-family: "Inter", sans-serif; */
+    font-family: "SF Pro Display";
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
     font-weight: 500;
 }
 
@@ -49,20 +50,20 @@
     cursor: pointer;
     transition: background 0.3s; 
     font-size: 1.2rem; 
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
     border-radius: 8px; 
 }
 
 .concrete-blocks-package-header h2 {
     font-size: 24px;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
     margin: 0px;
 }
 
 .concrete-blocks-package-header p {
     font-size: 20px;
     margin: 0px;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
 }
 
 .concrete-blocks-package-header:hover {
@@ -90,13 +91,13 @@
 
 .concrete-blocks-feature-details ul li span {
     font-size: 16px;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
     font-weight: 600;
 }
 
 .concrete-blocks-feature-header h3 {
     font-size: 17px;
-    font-family: "Inter", sans-serif;
+    font-family: "SF Pro Display";
     margin: 2px;
 }
 
@@ -135,39 +136,39 @@
 
     .concrete-blocks-packages h1 {
         font-size: 1.2rem; 
-        font-family: "Inter", sans-serif;
+        font-family: "SF Pro Display";
     }
     .concrete-blocks-packages {
         padding: 20px;
     }
     .concrete-blocks-package-header {
         font-size: 1rem; 
-        font-family: "Inter", sans-serif;
+        font-family: "SF Pro Display";
     }
     .concrete-blocks-package-header h2 {
         font-size: 17px;
-        font-family: "Inter", sans-serif;
+        font-family: "SF Pro Display";
     }
     .concrete-blocks-package-header p {
         font-size: 15px;
-        font-family: "Inter", sans-serif;
+        font-family: "SF Pro Display";
     }
     .concrete-blocks-feature-header h3 {
         font-size: 16px;
-        font-family: "Inter", sans-serif;
+        font-family: "SF Pro Display";
     }
     .concrete-blocks-feature-header {
         font-size: 1rem; 
-        font-family: "Inter", sans-serif;
+        font-family: "SF Pro Display";
         margin: 5px;
     }
     .concrete-blocks-feature-details ul li span {
         font-size: 14px;
-        font-family: "Inter", sans-serif;
+        font-family: "SF Pro Display";
     }
     .concrete-blocks-feature-details ul li {
         font-size: 14px;
-        font-family: "Inter", sans-serif;
+        font-family: "SF Pro Display";
     }
 }
 

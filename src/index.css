@@ -15,10 +15,15 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont,
+               "SF Pro Display",
+               "Segoe UI",
+               Roboto,
+               Arial,
+               sans-serif;
   line-height: 1.6;
   color: #333;
-  overflow-x: hidden;
+  overflow-x: hidden;             
 }
 
 .container {
@@ -28,13 +33,34 @@ body {
   padding: 0 15px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 15px;
 }
 
-p {
+h2 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+h3,
+h4 {
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+h5,
+h6,
+p,
+a,
+li,
+ul,
+span {
+  font-weight: 400;
+  line-height: 1.2;
   margin-bottom: 15px;
 }
 
@@ -87,6 +113,7 @@ img {
 
 .section-header h2 {
   font-size: 36px;
+  font-family: "SF Pro Display";
   color: var(--dark-color);
 }
 
