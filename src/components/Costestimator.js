@@ -116,14 +116,13 @@ const CostEstimator = () => {
     <>
       <Helmet>
   <title>Home Construction Cost Estimator Bangalore | RS Construction Homes</title>
-  <title>Home Construction Cost Estimator Bangalore | RS Construction Homes</title>
-<meta name="description" content="Estimate your home construction cost in Bangalore instantly. RS Construction Homes helps you plan your budget with accurate and transparent pricing."/>
-<meta name="keywords" content="Construction Cost Estimator Bangalore, House Construction Cost Bangalore, Construction Cost Calculator, Home Construction Estimate, Building Cost Calculator, RS Constructions Bangalore, Construction Packages Bangalore, Affordable Construction Bangalore, Residential Construction Cost, Civil Work Estimate, Cost to Build a House in Bangalore, Turnkey Construction Estimate, Per Sqft Construction Cost Bangalore, Estimate Your Home Construction Cost, Construction Budget Calculator, Home Building Estimation Bangalore"/>
-<meta name="robots" content="index, follow"/>
-<meta property="og:title" content="Construction Cost Estimator Bangalore"/>
-<meta property="og:description" content="Instantly calculate your construction cost in Bangalore with RS Construction Homes’ cost estimator tool."/>
+  <meta name="description" content="Estimate your home construction cost in Bangalore instantly. RS Construction Homes helps you plan your budget with accurate and transparent pricing."/>
+  <meta name="keywords" content="Construction Cost Estimator Bangalore, House Construction Cost Bangalore, Construction Cost Calculator, Home Construction Estimate, Building Cost Calculator, RS Constructions Bangalore, Construction Packages Bangalore, Affordable Construction Bangalore, Residential Construction Cost, Civil Work Estimate, Cost to Build a House in Bangalore, Turnkey Construction Estimate, Per Sqft Construction Cost Bangalore, Estimate Your Home Construction Cost, Construction Budget Calculator, Home Building Estimation Bangalore"/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:title" content="Construction Cost Estimator Bangalore"/>
+  <meta property="og:description" content="Instantly calculate your construction cost in Bangalore with RS Construction Homes’ cost estimator tool."/>
   <meta property="og:url" content="https://rsconstruction.homes/cost-estimator" />
-  <meta property="og:type" content="tool" />
+  <meta property="og:type" content="website"/>  
 </Helmet>
 
 

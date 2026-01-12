@@ -13,12 +13,11 @@ const AboutUs = () => {
     <>
       <Helmet>
         <title>About Us | RS Construction Bangalore</title>
-        <meta
-          name="description"
-          content="Learn about RS Constructions, a trusted construction company in Bangalore offering high-quality residential, commercial, and civil construction services. We focus on innovation, quality, and customer satisfaction to turn your dream home into reality."
-        />
+        <meta name="description" content="Learn about RS Constructions, a trusted construction company in Bangalore offering high-quality residential, commercial, and civil construction services. We focus on innovation, quality, and customer satisfaction to turn your dream home into reality."/>
         <meta name="keywords" content="About RS Constructions, RS Constructions Bangalore, Construction Company in Bangalore, Best Builders in Bangalore, Residential Construction Company, Commercial Construction Bangalore, Civil Contractors in Bangalore, Home Builders in Bangalore, Trusted Construction Company, Turnkey Construction Company Bangalore, Building Contractors Bangalore, Construction Experts Bangalore, Top Construction Companies Bangalore, Reliable Home Builders Bangalore, Professional Construction Services Bangalore"></meta>
-        <link rel="canonical" href="https://rsconstruction.homes/about" />
+        <meta name="robots" content="index, follow"/>
+        <meta property="og:url" content="https://rsconstruction.homes/about"/>
+        <meta property="og:type" content="website"/>  
       </Helmet>
 
     <div className="about-page">

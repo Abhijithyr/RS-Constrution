@@ -1,11 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { 
-  // FaPlay,
-  // FaDraftingCompass,
-  // FaFileSignature,
-  // FaHardHat,
-  // FaMapMarkerAlt,
-  // FaCheckCircle,
+
   FaMoneyBillWave, 
   FaSearchDollar, 
   FaClipboardCheck, 
@@ -28,8 +23,7 @@ import { Helmet } from "react-helmet-async";
 const Home = () => {
   const heroImages = [HeroImage1, HeroImage2];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
-  // const [activeTab, setActiveTab] = useState(1);
+  const [isVisible, setIsVisible] = useState(false); 
 
   // Hero image carousel
   useEffect(() => {
@@ -64,21 +58,21 @@ const Home = () => {
       title: "RESIDENTIAL CONSTRUCTION",
       subtitle: "Dream homes tailored to you",
       description: "We build premium furnished and semi-furnished homes...",
-      link: "/package"
+      link: "/packages"
     },
     {
       image: CommercialImg,
       title: "COMMERCIAL CONSTRUCTION",
       subtitle: "Spaces that inspire business",
       description: "Creating innovative commercial spaces...",
-      link: "/package"
+      link: "/packages"
     },
     {
       image: VillaImg,
       title: "VILLA CONSTRUCTION",
       subtitle: "Luxury living redefined",
       description: "Custom villas blending modern design...",
-      link: "/package"
+      link: "/packages"
     }
   ];
 
@@ -111,15 +105,14 @@ const Home = () => {
     <Helmet>
 
       <title>Residential & Commercial Construction in Bangalore | RS Construction Homes</title>
-<meta name="description" content="RS Construction Homes provides top-quality residential and commercial construction, renovation, and interior design services in Bangalore. Get your free consultation today!"/>
-<meta name="keywords" content="Construction company in Bangalore, home construction, renovation, builders, residential contractors, RS Construction Homes,RS Constructions, RS Construction Bangalore, Construction Company in Bangalore, Building Contractors in Bangalore, Best Construction Company in Bangalore, Civil Engineering Contractors Bangalore, Residential Builders in Bangalore, Home Construction in Bangalore, House Construction in Bangalore, Commercial Builders Bangalore, Turnkey Construction Services Bangalore, Modern Home Builders Bangalore, Affordable Construction Packages Bangalore, Construction Cost Estimator Bangalore, Civil Work Contractors Bangalore, Trusted Construction Company in Bangalore, Top Builders in Bangalore, Best Construction Services Bangalore, Residential Construction Company, Construction Near Me Bangalore"/>
-<meta name="robots" content="index, follow"/>
-<meta property="og:title" content="Residential & Commercial Construction in Bangalore | RS Construction Homes"/>
-<meta property="og:description" content="Trusted construction company offering residential and commercial projects in Bangalore. Quality workmanship and timely delivery."/>
-<meta property="og:url" content="https://rsconstruction.homes/"/>
-<meta property="og:type" content="website"/>
-        
-      </Helmet>
+      <meta name="description" content="RS Construction Homes provides top-quality residential and commercial construction, renovation, and interior design services in Bangalore. Get your free consultation today!"/>
+      <meta name="keywords" content="Construction company in Bangalore, home construction, renovation, builders, residential contractors, RS Construction Homes,RS Constructions, RS Construction Bangalore, Construction Company in Bangalore, Building Contractors in Bangalore, Best Construction Company in Bangalore, Civil Engineering Contractors Bangalore, Residential Builders in Bangalore, Home Construction in Bangalore, House Construction in Bangalore, Commercial Builders Bangalore, Turnkey Construction Services Bangalore, Modern Home Builders Bangalore, Affordable Construction Packages Bangalore, Construction Cost Estimator Bangalore, Civil Work Contractors Bangalore, Trusted Construction Company in Bangalore, Top Builders in Bangalore, Best Construction Services Bangalore, Residential Construction Company, Construction Near Me Bangalore"/>
+      <meta name="robots" content="index, follow"/>
+      <meta property="og:title" content="Residential & Commercial Construction in Bangalore | RS Construction Homes"/>
+      <meta property="og:description" content="Trusted construction company offering residential and commercial projects in Bangalore. Quality workmanship and timely delivery."/>
+      <meta property="og:url" content="https://rsconstruction.homes/"/>
+      <meta property="og:type" content="website"/>              
+    </Helmet>
 
     <div className="home-page">
       {/* Hero Section */}
@@ -174,58 +167,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Working Steps Section */}
-      {/* <section className="how-it-works-main-wrapper animate-on-scroll">
-        <div className="container">
-          <div className="common-heading">
-            <h3>Working Steps</h3>
-            <h2>Your Roadmap to Building the Home of Your Dreams</h2>
-          </div>
 
-          <div className="working-steps-main">
-            {steps.map((step, index) => (
-              <div
-                key={step.id}
-                className={`working-step ${activeTab === step.id ? 'active' : ''}`}
-                onClick={() => setActiveTab(step.id)}
-              >
-                <span className="step-icon">{stepIcons[index]}</span>
-                <p>{step.title}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="working-steps-content">
-            {steps.map((step) =>
-              activeTab === step.id ? (
-                <div key={step.id} className="tab-content active">
-                  <div className="step-content-main">
-                    <div className="step-content-left">
-                      <img loading="lazy" src={step.image} alt={`Image for ${step.title}`} />
-                    </div>
-                    <div className="step-content-right">
-                      <h2>{step.title}</h2>
-                      <p>{step.description}</p>
-                      <ul className="common-ul">
-                        {step.points.map((point, idx) => (
-                          <li key={idx}>
-                            <FaCheckCircle className="check-icon" /> {point}
-                          </li>
-                        ))}
-                      </ul>
-                      <div className="common-btn">
-                        <a href="/how-it-works">Know More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ) : null
-            )}
-          </div>
-        </div>
-      </section> */}
-
-      {/* Features Section */}
       <section className={`features-section animate-on-scroll ${isVisible ? 'visible' : ''}`}>
         <div className="container">
           <div className="section-header">

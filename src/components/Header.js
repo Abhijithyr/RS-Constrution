@@ -67,11 +67,9 @@ const Header = () => {
                 <li><a href="/" className="nav-link">Our Homes</a></li>
                 <li><a href="/services" className="nav-link">Services</a></li>
                 <li><a href="/cost-estimator" className="nav-link">Cost Estimator</a></li>
-                <li><a href="/package" className="nav-link">Packages</a></li>
+                <li><a href="/packages" className="nav-link">Packages</a></li>
               </ul>
-              {/* <button className="consultation-btn" onClick={toggleModal}>
-                Get free consultation <FaArrowRight className="btn-arrow" />
-              </button> */}
+              
             </nav>
 
             {/* Mobile Menu Toggle - always visible on all screens */}
@@ -112,44 +110,16 @@ const Header = () => {
               <li><a href="/about" onClick={toggleMenu}>About Us</a></li>
               <li><a href="/services" onClick={toggleMenu}>Services</a></li>
               <li><a href="/cost-estimator" onClick={toggleMenu}>Cost Estimator</a></li>
-              <li><a href="/package" onClick={toggleMenu}>Packages</a></li>
+              <li><a href="/packages" onClick={toggleMenu}>Packages</a></li>
               <li><a href="/gallery" onClick={toggleMenu}>Gallery</a></li>
               <li><a href="/contact" onClick={toggleMenu}>Contact Us</a></li>
-              {/* <li>
-                <button className="mobile-consultation-btn" onClick={() => { toggleModal(); toggleMenu(); }}>
-                  Get Free Consultation <FaArrowRight className="btn-arrow" />
-                </button>
-              </li> */}
+              
             </ul>
           </nav>
         </div>
       </div>
 
-      {/* Modal */}
-      {/* {isModalOpen && (
-        <div className="modal-overlay" onClick={toggleModal} role="dialog" aria-modal="true" aria-labelledby="modal-title">
-          <div className="modal-content" onClick={e => e.stopPropagation()}>
-            <h3 id="modal-title">Get Free Consultation</h3>
-            <p>One of our experts will reach out to you shortly.</p>
-            <form className="consultation-form">
-              <input type="text" placeholder="Your Name" required />
-              <input type="tel" placeholder="Phone Number" required />
-              <input type="email" placeholder="Email Address" />
-              <textarea placeholder="Your Project Details"></textarea>
-              <button type="submit" className="submit-btn">
-                Submit Request <FaArrowRight className="btn-arrow" />
-              </button>
-            </form>
-            <button
-              className="close-modal"
-              onClick={toggleModal}
-              aria-label="Close consultation modal"
-            >
-              ×
-            </button>
-          </div>
-        </div>
-      )} */}
+      
     </header>
   );
 };

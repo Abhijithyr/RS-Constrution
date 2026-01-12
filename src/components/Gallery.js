@@ -148,13 +148,13 @@ const Gallery = () => {
     <>
      <Helmet>
         <title>Our Construction Project Gallery | RS Construction Homes</title>
-<meta name="description" content="Explore the RS Constructions project gallery featuring residential, commercial, and villa construction in Bangalore. View our completed and ongoing projects built with quality, precision, and modern architectural design."/>
-<meta name="keywords" content="RS Constructions Gallery, Construction Gallery Bangalore, Building Projects Bangalore, RS Constructions Projects, Residential Construction Bangalore, Commercial Construction Bangalore, Villa Construction Bangalore, Modern Home Design Gallery, House Construction Photos, Home Interior Gallery Bangalore, Construction Company Projects, Civil Engineering Works Bangalore, Architecture and Design Gallery, Project Showcase Bangalore, Modern Building Designs Bangalore, Construction Work Images Bangalore, Home Builders Gallery, RS Constructions Completed Projects, RS Construction Work Photos, Luxury Home Construction Bangalore"/>
-<meta name="robots" content="index, follow"/>
-<meta property="og:title" content="Project Gallery – RS Construction Homes"/>
-<meta property="og:description" content="Explore our completed construction and renovation projects across Bangalore."/>
-<meta property="og:url" content="https://rsconstruction.homes/gallery"/>
-<meta property="og:type" content="gallery"/>
+        <meta name="description" content="Explore the RS Constructions project gallery featuring residential, commercial, and villa construction in Bangalore. View our completed and ongoing projects built with quality, precision, and modern architectural design."/>
+        <meta name="keywords" content="RS Constructions Gallery, Construction Gallery Bangalore, Building Projects Bangalore, RS Constructions Projects, Residential Construction Bangalore, Commercial Construction Bangalore, Villa Construction Bangalore, Modern Home Design Gallery, House Construction Photos, Home Interior Gallery Bangalore, Construction Company Projects, Civil Engineering Works Bangalore, Architecture and Design Gallery, Project Showcase Bangalore, Modern Building Designs Bangalore, Construction Work Images Bangalore, Home Builders Gallery, RS Constructions Completed Projects, RS Construction Work Photos, Luxury Home Construction Bangalore"/>
+        <meta name="robots" content="index, follow"/>
+        <meta property="og:title" content="Project Gallery – RS Construction Homes"/>
+        <meta property="og:description" content="Explore our completed construction and renovation projects across Bangalore."/>
+        <meta property="og:url" content="https://rsconstruction.homes/gallery"/>
+        <meta property="og:type" content="website"/> 
 
       </Helmet>
 

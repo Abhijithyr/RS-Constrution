@@ -1,35 +1,92 @@
-/* Packages.css */
-
-/* Base Styles */
-.package-main-container {
-  /* font-family: "Inter", sans-serif; */
-  font-family: "SF Pro Display";
-  color: #333;
-  overflow-x: hidden;
+body {
+  font-family: -apple-system, BlinkMacSystemFont,
+               "SF Pro Display",
+               "Segoe UI",
+               Roboto,
+               Arial,
+               sans-serif;            
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.concrete-blocks-packages {
+    padding: 40px; 
 }
 
-/* Hero Section */
-.packages-hero {
-  height: 60vh;
-  min-height: 500px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
+.concrete-blocks-packages h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 2.3rem;
+    font-family: "SF Pro Display";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 
-.hero-content {
-  max-width: 800px;
-  padding: 0 20px;
+.concrete-blocks-packages-container {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+    margin: 0px 40px;
+}
+
+.concrete-blocks-package {
+    border: 1px solid #ced4da; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 10px; 
+    flex: 1 1 calc(30% - 10px); 
+    max-width: calc(30% - 10px); 
+    background-color: #d9e0e7;
+    margin-bottom: 40px;
+}
+
+.concrete-blocks-package:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); 
+}
+
+.concrete-blocks-package-header {
+    background: #313a43; 
+    color: #fff; 
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s; 
+    font-size: 1.2rem; 
+    font-family: "SF Pro Display";
+    border-radius: 8px; 
+}
+
+.concrete-blocks-package h1 {
+    font-size: 20px;
+    font-family: "SF Pro Display";
+    font-weight: 800;
+}
+
+.concrete-blocks-package-header h2 {
+    font-size: 20px;
+    font-family: "SF Pro Display";
+    margin: 0px;
+}
+
+.concrete-blocks-package-header p {
+    font-size: 18px;
+    margin: 0px;
+    font-family: "SF Pro Display";
+}
+
+.concrete-blocks-package-header:hover {
+    background: #0056b3; 
+}
+
+.concrete-blocks-package-details {
+    padding: 15px;
+    border-radius: 8px; 
 }
 
 .hero-title {
@@ -40,320 +97,269 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.hero-subtitle {
-  font-size: 1.5rem;
-  font-family: "SF Pro Display";
-  color: white;
-  opacity: 0.9;
+.concrete-blocks-feature-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 8px;
+    cursor: pointer;
+    transition: background 0.3s; 
+    font-size: 1rem;
+    color: #000; 
+    border: 1px solid #adabab;
 }
 
-/* Section Header */
-.section-header {
-  text-align: center;
-  margin-bottom: 60px;
+.concrete-blocks-feature-details ul li span {
+    font-size: 16px;
+    font-family: "SF Pro Display";
+    font-weight: 600;
 }
 
-.section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  font-family: "SF Pro Display";
-  margin-bottom: 15px;
-  color: #222;
-  position: relative;
-  display: inline-block;
+.concrete-blocks-feature-header h3 {
+    font-size: 17px;
+    font-family: "SF Pro Display";
+    margin: 2px;
 }
 
-.section-title::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background-color: #f39c12;
+.concrete-blocks-feature-header:hover {
+    background: #d0e2ff; 
 }
 
-.section-description {
-  font-size: 1.1rem;
-  font-family: "SF Pro Display";
-  color: #666;
-  max-width: 700px;
-  margin: 0 auto;
+.concrete-blocks-feature-details {
+    padding: 10px 0; 
+    animation: fadeIn 0.3s; 
 }
 
-/* Packages Grid */
-.packages-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 30px;
-  margin-top: 50px;
+.concrete-blocks-feature-details ul {
+    list-style-type: none; 
+    padding-left: 0; 
 }
 
-.package-card {
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  position: relative;
+.concrete-blocks-feature-details ul li {
+    padding: 5px 0; 
+    border-bottom: 1px solid #e7e7e7; 
 }
 
-.package-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+@media (max-width: 899px) {
+    .concrete-blocks-package {
+        flex: 1 1 calc(30% - 10px); 
+        max-width: calc(30% - 10px); 
+    }
 }
 
-.package-card.trending {
-  border-top: 4px solid #f39c12;
+@media (max-width: 599px) {
+    .concrete-blocks-package {
+        flex: 1 1 100%; 
+        max-width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .concrete-blocks-packages h1 {
+        font-size: 1.2rem; 
+        font-family: "SF Pro Display";
+    }
+    .concrete-blocks-packages {
+        padding: 5px;
+    }
+    .concrete-blocks-package-header {
+        font-size: 1rem; 
+        font-family: "SF Pro Display";
+    }
+    .concrete-blocks-package-header h2 {
+        font-size: 17px;
+        font-family: "SF Pro Display";
+    }
+    .concrete-blocks-package-header p {
+        font-size: 15px;
+        font-family: "SF Pro Display";
+    }
+    .concrete-blocks-feature-header h3 {
+        font-size: 16px;
+        font-family: "SF Pro Display";
+    }
+    .concrete-blocks-feature-header {
+        font-size: 1rem; 
+        font-family: "SF Pro Display";
+        margin: 5px;
+    }
+    .concrete-blocks-feature-details ul li span {
+        font-size: 14px;
+        font-family: "SF Pro Display";
+    }
+    .concrete-blocks-feature-details ul li {
+        font-size: 14px;
+        font-family: "SF Pro Display";
+    }
 }
 
-.trending-badge {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: #f39c12;
-  color: white;
-  padding: 5px 15px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-family: "SF Pro Display";
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  z-index: 2;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.package-image-container {
-  overflow: hidden;
-}
-
-.package-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.package-card:hover .package-image {
-  transform: scale(1.05);
-}
-
-.package-content {
-  padding: 25px;
-}
-
-.package-icon-wrapper {
-  width: 60px;
-  height: 60px;
-  background-color: rgba(243, 156, 18, 0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.package-icon {
-  font-size: 1.5rem;
-  font-family: "SF Pro Display";
-  color: #f39c12;
-}
-
-.package-title {
-  font-size: 1.4rem;
-  font-family: "SF Pro Display";
-  margin-bottom: 15px;
-  color: #222;
-}
-
-.package-description {
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.package-features {
-  margin-bottom: 25px;
-}
-
-.package-features li {
-  position: relative;
-  padding-left: 25px;
-  margin-bottom: 10px;
-  color: #555;
-}
-
-.package-features li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 8px;
-  width: 10px;
-  height: 10px;
-  background-color: #f39c12;
-  border-radius: 50%;
-}
-
-.package-button {
-  display: inline-flex;
-  align-items: center;
-  background-color: #f39c12;
-  color: white;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-family: "SF Pro Display";
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.package-button:hover {
-  background-color: #e67e22;
-  transform: translateY(-2px);
-}
-
-.package-button .arrow-icon {
-  margin-left: 8px;
-  transition: transform 0.3s ease;
-}
-
-.package-button:hover .arrow-icon {
-  transform: translateX(5px);
-}
-
-/* CTA Section */
-.package-cta {
-  padding: 100px 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../components/Images/Contactus.png');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-  margin-top: 80px;
-}
-
-.cta-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.cta-content h2 {
-  font-size: 2.5rem;
-  font-family: "SF Pro Display";
-  margin-bottom: 20px;
-}
-
-.cta-content p {
-  font-size: 1.2rem;
-  font-family: "SF Pro Display";
-  margin-bottom: 30px;
-  opacity: 0.9;
-}
-
-.cta-button {
-  display: inline-flex;
-  align-items: center;
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-  padding: 12px 30px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-family: "SF Pro Display";
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  transform: translateY(-3px);
-}
-
-.cta-button .arrow-icon {
-  margin-left: 8px;
-  transition: transform 0.3s ease;
-}
-
-.cta-button:hover .arrow-icon {
-  transform: translateX(5px);
-}
-
-/* Animations */
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
-}
-
-/* Responsive Styles */
 @media (max-width: 992px) {
   .hero-title {
     font-size: 3rem;
     font-family: "SF Pro Display";
   }
-  
-  .section-title {
-    font-size: 2.2rem;
-    font-family: "SF Pro Display";
-  }
-  
-  .packages-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
 }
 
-@media (max-width: 768px) {
-  .packages-hero {
-    height: 50vh;
-    min-height: 400px;
-  }
-  
+@media (max-width: 768px) {  
   .hero-title {
     font-size: 2.5rem;
     font-family: "SF Pro Display";
   }
-  
-  .hero-subtitle {
-    font-size: 1.2rem;
-    font-family: "SF Pro Display";
-  }
-  
-  .section-title {
-    font-size: 2rem;
-    font-family: "SF Pro Display";
-  }
-  
-  .package-card {
-    max-width: 400px;
-    margin: 0 auto;
-  }
 }
 
-@media (max-width: 576px) {
-  .packages-hero {
-    height: 40vh;
-    min-height: 300px;
-  }
-  
+@media (max-width: 576px) {  
   .hero-title {
     font-size: 2rem;
     font-family: "SF Pro Display";
   }
-  
-  .section-title {
-    font-size: 1.8rem;
-    font-family: "SF Pro Display";
+  .concrete-blocks-packages-container {
+    margin: 0px 10px;
+}
+}
+
+.packages-namings {
+  display: grid;
+  gap: 24px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  box-sizing: border-box;
+}
+
+/* Desktop – 4 */
+@media (min-width: 1024px) {
+  .packages-namings {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  .packages-grid {
+}
+
+/* Tablet – 2 */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .packages-namings {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile – 1 */
+@media (max-width: 599px) {
+  .packages-namings {
     grid-template-columns: 1fr;
   }
-  
-  .cta-content h2 {
-    font-size: 2rem;
+}
+
+.package-details {
+  display: flex;
+  align-items: center;              /* Vertical alignment fixed */
+  gap: 16px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e1e5ea;
+  border-radius: 12px;
+  text-decoration: none;
+  min-height: 92px;                 /* Equal card height */
+  box-sizing: border-box;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.package-details:hover {
+  box-shadow: 0 10px 22px rgba(226, 198, 107, 0.08);
+  transform: translateY(-4px);
+  background-color: #d3efd5;
+}
+
+.package-details > span {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;                  /* Prevent shrink */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f6f8;
+  border-radius: 8px;
+}
+
+/* Image perfectly centered */
+.package-details img {
+  width: 42px;
+  height: 42px;
+  /* object-fit: contain; */
+  display: block;
+}
+
+.package-details-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;          /* Vertical centering */
+  gap: 4px;
+  line-height: 1.2;
+}
+
+/* Package title */
+.package-details-name p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Price */
+.package-details-name span {
+  font-size: 15px;
+  color: #6b7280;
+}
+
+@media (max-width: 599px) {
+  .package-details {
+    padding: 16px;
+    min-height: 84px;
+  }
+
+  .package-details > span {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+  }
+
+  .package-details-name p {
+    font-size: 14px;
     font-family: "SF Pro Display";
   }
+}
+
+.packages-hero {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.package-hero-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.package-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.package-hero-content h1{
+    font-size: 32px;
+    font-family: "SF Pro Display";
+    font-weight: 600;
 }
